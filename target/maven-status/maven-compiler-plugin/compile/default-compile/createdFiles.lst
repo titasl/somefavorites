@@ -1,0 +1,14 @@
+com\itunes\integration\favorites\entities\Collection.class
+com\itunes\integration\favorites\entities\FavoriteAlbums.class
+com\itunes\integration\favorites\entities\FavoriteArtist.class
+com\itunes\integration\favorites\controllers\FiveFavoriteAlbumsController.class
+com\itunes\integration\favorites\configuration\SpringConfiguration.class
+com\itunes\integration\favorites\services\CachingServiceImpl.class
+com\itunes\integration\favorites\services\FavoritesArtistService.class
+com\itunes\integration\favorites\entities\FavoriteAlbumsFromITunes.class
+com\itunes\integration\favorites\services\FavoriteAlbumsServiceImpl.class
+com\itunes\integration\favorites\dao\FavoriteArtistRepository.class
+com\itunes\integration\favorites\services\FavoritesArtistServiceImpl.class
+com\itunes\integration\favorites\services\FavoriteAlbumsService.class
+com\itunes\integration\favorites\FavoritesApplication.class
+com\itunes\integration\favorites\controllers\FavoriteArtistController.class

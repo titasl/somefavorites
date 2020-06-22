@@ -1,0 +1,33 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="Titas" id="2020-06-21">
+        <createTable tableName="favorite_artist">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="user_id" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="artist_id" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <!-- I admit I overdid here, initial idea was to load only on test, but something went wrong out of time to resolve all -->
+    <!-- Still that could count as good example of providing initial data ;) -->
+    <changeSet author="Titas" id="2020-06-22" context="test">
+        <insert tableName="favorite_artist">
+            <column name="user_id" value="Vardenis"/>
+            <column name="artist_id" value="Dainininkas"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
